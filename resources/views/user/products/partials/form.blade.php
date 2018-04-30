@@ -1,8 +1,8 @@
 {{ Form::hidden('user_id',auth()->user()->id)}}
 
 <div class="form-group">
-  {{ Form::label('cate_id', 'Categorias') }}
-  {{ Form::select('cate_id', $categories, null, ['']) }}
+  {{ Form::label('category_id', 'Categorias') }}
+  {{ Form::select('category_id', $categories, null, ['']) }}
 </div>
 <div class="form-group">
   {{ Form::label('deta_id', 'Detalle') }}

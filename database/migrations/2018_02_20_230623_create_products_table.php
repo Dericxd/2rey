@@ -20,10 +20,10 @@ class CreateProductsTable extends Migration
             $table->integer('amount');
             $table->decimal('tax');
             $table->integer('user_id')->unsigned();
-            $table->integer('cate_id')->unsigned();
+            $table->integer('category_id')->unsigned();
             $table->integer('deta_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('cate_id')->references('id')->on('categories');
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('deta_id')->references('id')->on('details');
             $table->timestamps();
         });

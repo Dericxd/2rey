@@ -20,6 +20,7 @@ Route::get('rey', 'Web\PageController@rey')->name('rey');
 Route::resource('users', 'Admin\UserController');
 Route::resource('histories', 'Admin\HistoryController');
 Route::get('descargar', 'Admin\ReportController@pdf')->name('products.pdf');
+Route::get('products/{product}/print', 'Admin\ReportController@productPrint');
 
 //Usuarios
 Route::resource('categories', 'User\CategoryController');

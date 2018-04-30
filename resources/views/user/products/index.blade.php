@@ -44,6 +44,9 @@
                                     <a href="{{ route('products.edit', $product->id) }}" class="btn btn-sm btn-default">Editar</a>
                                 </td>
                                 <td width="10px">
+                                    <a href="products/{{$product->id}}/print" class="btn btn-sm btn-info">Imprimir</a>
+                                </td>
+                                <td width="10px">
                                     {!! Form::open(['route' => ['products.destroy', $product->id], 'method' => 'DELETE']) !!}
                                         <button class="btn btn-sm btn-danger">
                                             Eliminar
